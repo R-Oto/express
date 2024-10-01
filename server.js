@@ -8,7 +8,6 @@ const app = express()
 const PORT = process.env.PORT || 4000;
 
 app.use(express.json())
-app.use(express.static())
 
 mongoose.connect(process.env.ATLAS_URI).then(()=>{
     console.log('connected')
